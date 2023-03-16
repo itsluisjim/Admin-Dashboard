@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.sidebar {
+    background-color: #003882;
+    grid-row: 1 / -1;
+}
+.header {
+    background-color: white;
+}
+.main-content {
+    background-color: #e2e8f0;
+}
