@@ -128,12 +128,13 @@ input[type="search"] {
     background-color: #e2e8f0;
     display: grid;
     grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
 }
 .col-left {
-    padding: 1rem;
-    background-color: #e2e8f0;
     display: grid;
-    grid-template: 10px 1fr 1fr 1fr / 1fr 1fr;
+    grid-template: 10px 1fr 1fr 1fr / repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 1fr;
     gap: 20px;
 }
 .heading {
@@ -157,6 +158,26 @@ input[type="search"] {
 .gray {
     color: rgb(151, 151, 151);
 }
+.adj-contianer{
+    border: none;
+    overflow: scroll;
+}
 .col-right {
-    background-color: green;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px 240px 50px 1fr;
+} 
+.trending-user {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.gap {
+    justify-content: flex-start;
+    gap: 15px;
 }
