@@ -126,4 +126,37 @@ input[type="search"] {
 }
 .main-content {
     background-color: #e2e8f0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.col-left {
+    padding: 1rem;
+    background-color: #e2e8f0;
+    display: grid;
+    grid-template: 10px 1fr 1fr 1fr / 1fr 1fr;
+    gap: 20px;
+}
+.heading {
+    grid-column: 1 / -1;
+}
+.card {
+    background-color: white;
+    border-radius: 5px;
+    border-left: 8px solid rgb(249, 184, 22);
+    padding: 1.5rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.content-links {
+    align-self: flex-end;
+    display: flex;
+    gap: 1.8rem;
+    fill:rgb(109, 108, 108);
+}
+.gray {
+    color: rgb(151, 151, 151);
+}
+.col-right {
+    background-color: green;
 }
