@@ -1,5 +1,3 @@
-# theOdinProject-Admin-Dashboard
-
 # Admin-Dashboard
 
 The project I have completed involved the creation of an admin dashboard using HTML and CSS. This was done as part of my participation in The Odin Project course, with the aim of familiarizing myself with advanced concepts like flexbox and grid.
